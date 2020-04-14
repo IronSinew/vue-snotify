@@ -60,6 +60,7 @@
        * Initialize base toast config
        */
       initToast () {
+        this.toast.initTime = Math.round(+new Date()/100);
         if (this.toast.config.timeout > 0) {
           this.startTimeout(0);
         }
